@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".Activity.PerfilActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/toolbar_white" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-thin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/CirImagemPessoa"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_people"
+                android:layout_below="@id/toolbarPessoa"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Perfil"
+                android:textColor="@color/white"
+                android:textSize="40sp"/>
+
+
+            <EditText
+                android:id="@+id/txtnome_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:hint = "Nome"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/txtemail_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:hint = "E-mail"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+
+            <EditText
+                android:id="@+id/txtcpf_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:hint = "CPF"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/txttelefone_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:hint = "Telefone"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/txtsaldo_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:enabled="false"
+                android:hint = "Saldo"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/txtdescricao_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:hint = "descricao"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/txtsenha_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:hint = "senha"
+                android:padding="15dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/btnAtualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="ATUALIZAR"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/botao"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

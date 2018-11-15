@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".Activity.FaturaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarFatura"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/toolbar_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cadastro"
+            android:textColor="@color/white"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Fatura"
+            android:textColor="@color/white"
+            android:textSize="40sp"/>
+
+        <EditText
+            android:id="@+id/txtIdentificacao_fatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:hint = "Digite o codigo de identificacao"
+            android:padding="15dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/txtFatura_fatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:hint = "Digite o valor da fatura"
+            android:padding="15dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/txtDescricao_fatura"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:hint = "Escreve uma descricao"
+            android:padding="15dp"
+            android:background="@color/white" />
+        <Button
+            android:id="@+id/btnCadastrar_fatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="CADASTRAR"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/botao"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

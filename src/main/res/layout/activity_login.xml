@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.LoginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ImageView
+        android:layout_width="207dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="50sp"/>
+        <EditText
+            android:id="@+id/txtNome_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:hint = "Digite seu email"
+            android:padding="15dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/txtSenha_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:inputType="numberPassword"
+            android:hint = "Digite sua senha"
+            android:padding="15dp"
+            android:background="@color/white" />
+        <Button
+            android:id="@+id/btnAacessar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="ACESSAR"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/botao"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnEsquecerSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:gravity="bottom"
+        android:text="Esqueceu sua senha?"/>
+
+
+
+</LinearLayout>
